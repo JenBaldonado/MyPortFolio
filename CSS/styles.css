@@ -1,0 +1,13 @@
+Body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    text-align: center;
+    color:aquamarine;
+}
+
+nav {
+    text-align: right;
+    inline-size: auto;
+}
