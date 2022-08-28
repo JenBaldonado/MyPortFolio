@@ -4,33 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" ref="CSS/bootstrap.min.css"/>
     <link rel="stylesheet" href="CSS/styles.css">
     <title>JeniferBaldonado</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <label>Home</label>
-            <label>About</label>
-            <label>Contact</label>
-        </nav>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <script src="js/bootstrap.bundle.min.js"></script>
+<!--********************HEADER-NAV Section*******************-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">jeniferbaldonado</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="hero">
-        <h1>Jenifer Baldonado</h1>
-        <p></p>
+<!--********************HERO Section*******************-->
+        <section class="hero" role="region" aria-labelledby="hero_title">
+            <div class="hero_content">
+                        <h1 class="hero_title" id="hero_title"><strong>Hi! I'm Jenifer</strong></h1>
+                        <h4 class="hero_subtitle">I am a full-stack web developer. 
+                            I work with designers, small businesses, and agencies in realizing their ideas. </h4>
+                            <!--insert a button or img element here for "Get Started"-->
+
+            </div>
+        </section>
+<!--********************PORTFOLIO Section*******************-->  
+        <section id="portfolio" class="portfolio" role="region" aria-labelledby="portfolio_title">
+            <div class="portfolio_div">
+                <h2 id="portfolio_title">Portfolio</h2>
+            <img src="Icons/Arrow.png" class="leftArrow">
+            <img src="Icons/Arrow.png" class="rightArrow">
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials" role="region" aria-labelledby="testimonials_title">
+            <div class="testimonials_title">
+                <h2 id="testimonials_title">Testimonials</h2>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact" role="region" aria-labelledby="contact_title">
+            <div class="contactSecOne">
+                
+                <form method="post" action="#">
+                    <h2 id="contact_title">Get in touch</h2>
+                    <div class="user-info">
+                        <label for="user-name">Name:</label>
+                        <input type="name" id="user-name" name="user-name">
+                    </div>
+                    <div class="user-info">
+                        <label for="user-email">Email:</label>
+                        <input type="email" id="user-email" name="user-email">
+                    </div>
+                    <div class="user-info">
+                        <label for="user-message">Message:</label>
+                        <input type="text" id="user-message" name="user-message">
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
     </main>
-
-    <section class="portfolio">
-        <div></div>
-    </section>
-
-    <section class="testimonies">
-
-    </section>
-
-    <section class="contactMe">
-
-    </section>
     
     <footer></footer>
     
