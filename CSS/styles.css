@@ -129,6 +129,10 @@ img {
     height: 20%;
     width: 20%;
     padding-bottom: 20px;
+<<<<<<< HEAD
+=======
+    padding-top: 0.5px;
+>>>>>>> 3348f8f7219fe49a7aa095257bd086598f13b5f0
 }
 
 
@@ -144,6 +148,7 @@ img {
 
 /*Services Section*/
 
+<<<<<<< HEAD
 #services {  
     background:#001F3D;
     background:linear-gradient(#4120A9, #A16AE8, #F6D4D2, rgba(161, 169, 254, 1));
@@ -153,6 +158,16 @@ img {
 }
 
 #services > h2 {
+=======
+#services {
+    background-color: rgba(0, 31, 61, 1);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#services > h2 {
+    color:#DAF0F3;
+>>>>>>> 3348f8f7219fe49a7aa095257bd086598f13b5f0
     text-align: center;
     font-weight: 300;
     padding-top:50px;
@@ -161,6 +176,7 @@ img {
 #services > .section-intro .hline {
     width: 120px;
     height: 2px;
+<<<<<<< HEAD
     background-color: rgba(161, 169, 254, 1);
     margin: 16px auto 0 auto;
     
@@ -188,6 +204,10 @@ img {
 }
 .carousel-caption {
     color:#001F3D;
+=======
+    background-color: #DAF0F3;
+    margin: 16px auto 0 auto;
+>>>>>>> 3348f8f7219fe49a7aa095257bd086598f13b5f0
 }
 
 /* Portfolio */
@@ -243,6 +263,18 @@ img {
 
 }
 
+<<<<<<< HEAD
+=======
+/*testimonials*/
+#testimonials {
+    text-align: center;
+    color: #DAF0F3;
+    background-color: rgba(0, 31, 61, 1);
+    padding-top: 50px;
+
+}
+
+>>>>>>> 3348f8f7219fe49a7aa095257bd086598f13b5f0
 #testimonials > .section-intro .hline {
     width: 120px;
     height: 2px;
@@ -272,11 +304,18 @@ hr {
     margin-top: 90px;
 }
 
+<<<<<<< HEAD
 /*Contact Section */
 
 #contact {
     color: rgba(0, 31, 61, 1);
     height:500px;
+=======
+/*Contact Setion */
+
+#contact {
+    color: rgba(0, 31, 61, 1);
+>>>>>>> 3348f8f7219fe49a7aa095257bd086598f13b5f0
 }
 
 .socmed-icons {
@@ -286,6 +325,7 @@ hr {
 
 .socmed-div {
     padding-top: 50px;
+<<<<<<< HEAD
     justify-content: space-evenly;
     
 }
@@ -293,11 +333,17 @@ hr {
 .contact-div {
     padding-top: 150px;
 }
+=======
+    
+}
+
+>>>>>>> 3348f8f7219fe49a7aa095257bd086598f13b5f0
 
 
 /*footer section*/
 
 footer {
+<<<<<<< HEAD
     height: 80px;
     background:linear-gradient(#4120A9, #A16AE8);
     text-align: center;
@@ -310,3 +356,10 @@ footer {
 }
 
 
+=======
+    background:rgba(0, 31, 61, 1);
+    height: 80px;
+    text-align: center;
+    padding-top: 25px;
+}
+>>>>>>> 3348f8f7219fe49a7aa095257bd086598f13b5f0
