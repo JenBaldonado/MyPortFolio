@@ -36,17 +36,9 @@ img {
 
 .navbar {
     background:#4120A9;
-}
+    
 
-.header img {
-    float: left;
-    width: 30px;
-    height: 30px;
-    background-color: #F8CF40;
-    border-radius: 55%;
-    border-style: double;
-    border-color: #4120A9;
-  }
+}
 
 .navbar .nav-link {
     font-size: 16px;
@@ -57,7 +49,6 @@ img {
 
 .navbar-brand {
     color:#DAF0F3;
-    
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
@@ -86,12 +77,9 @@ img {
   }
   
 .hero_logo {
+    border-radius: 55%;
     height: 72px;
     width: 72px;
-    background-color: #F8CF40;
-    border-radius: 55%;
-    border-style: double;
-    border-color: #4120A9;
 }
 
 .hero-section {
@@ -107,8 +95,10 @@ img {
     background-color:#4120A9;
     border-radius:375rem;
     padding: 10px 20px;
-    color: white;
+    color: #DAF0F3;
     font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -120,15 +110,26 @@ img {
     display: block;
     align-items: center;
     padding-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    
+}
+
+.about-container {
+    padding-top: 20px;
 }
 
 .filipiniana-img {
-    height: 20%;
-    width: 20%;
-    padding-bottom: 20px;
+    height: 80%;
+    width: 80%;
+    border-radius:15px;
+    box-shadow:0px 4px 17px 0px #001F3D;
+}
+
+.about-description-col {
+    padding-top: 200px;
+    font-size: 0.5rem;
+}
+
+.about-description {
+    padding-top: 20px;
 }
 
 
@@ -174,6 +175,12 @@ img {
     
 
 }
+
+.carousel-control-prev-icon:hover {
+    width: 50px;
+    height: 50px;
+}
+
 .carousel-control-next-icon {
     background-image: url("../Icons/next.png");
     background-repeat: no-repeat;
@@ -182,10 +189,16 @@ img {
 
 }
 
+.carousel-control-next-icon:hover {
+    width: 50px;
+    height: 50px;
+}
+
 .carousel-img{
     height: 50%;
     width: 50%;
 }
+
 .carousel-caption {
     color:#001F3D;
 }
@@ -198,6 +211,7 @@ img {
 .portfolio-item {
     overflow: hidden;
     position: relative;
+    border-radius: 5px;
  }
 
 .portfolio-overlay {
@@ -206,7 +220,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(14, 134, 212, 0.5);
+    background-color: rgba(161, 169, 254, 0.8);
     display: flex;
     align-items: flex-end;
     padding: 30px;
@@ -228,48 +242,6 @@ img {
 
 .portfolio-item:hover img {
    transform: scale(1.1);
-}
-
-
-
-/*testimonials*/
-#testimonials {
-    text-align: center;
-    color: #DAF0F3;
-    background:#001F3D;
-    background:linear-gradient(#4120A9, #A16AE8, #F6D4D2, rgba(161, 169, 254, 1)
-    );
-    padding-top: 50px;
-
-}
-
-#testimonials > .section-intro .hline {
-    width: 120px;
-    height: 2px;
-    background-color: #DAF0F3;
-    margin: 16px auto 0 auto;
-}
-
-.tes-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 55%;
-}
-
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 5px;
-    background-color:#DAF0F3;
-}
-
-.tes-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.tes-description {
-    margin-top: 90px;
 }
 
 /*Contact Section */
@@ -298,15 +270,36 @@ hr {
 /*footer section*/
 
 footer {
-    height: 80px;
     background:linear-gradient(#4120A9, #A16AE8);
+    padding-bottom: 50px;
+    height: 80px;
     text-align: center;
-}
-
-.footer-div1  h6{
-    font-size: 14px;
-    padding-top: 30px;
-
+    padding-top: 25px;
+    font-size: 16px;
 }
 
 
+/*@media screen  and (max-width:600px) {
+    /*-----Service Section-----
+    .carousel-img{
+        height: 50%;
+        width: 50%;
+    }
+}*/
+
+@media screen and (max-width:600px) {
+    .about-description-col {
+        padding-top: 10px;
+        
+    }
+
+    .section-intro .hline {
+        width: 90px;
+        
+    }
+
+    #services > .section-intro .hline {
+        width: 90px;
+    }
+
+}
