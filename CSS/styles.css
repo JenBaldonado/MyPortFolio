@@ -11,7 +11,7 @@ Body {
     line-height: 1.8;
     font-size: 15px;
     color:#DFE8E6;
-    background: rgba(161, 106, 232, 0.2);
+    background-color: #F6D4D2;
 }
 
 
@@ -69,10 +69,6 @@ Body {
 
 /*Hero Section*/
 
-/* @media (min-width: 992px) {
-    .rounded-lg-3 { border-radius: .3rem; }
-  } */
-
 .hero_logo {
     border-radius: 55%;
     height: 72px;
@@ -116,7 +112,6 @@ Body {
     height: 80%;
     width: 80%;
     border-radius:15px;
-
 }
 
 .filipiniana-img:hover {
@@ -213,9 +208,6 @@ Body {
     width: 50px;
     height: 50px;
 }
-
-
-
 
 
 /* Portfolio */
