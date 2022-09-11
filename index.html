@@ -16,12 +16,11 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-  <script src="js/bootstrap.bundle.min.js"></script>
 
   <!--********************HEADER-NAV Section*******************-->
 
   <header class="header">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="menu" >
       <div class="container">
         <a class="navbar-brand" href="#home" style="color: #daf0f3"><strong>jeniferbaldonado</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,16 +49,12 @@
       </div>
     </nav>
   </header>
-  
+  <!--********************HERO Section*******************-->
   <main>
-    <!--********************HERO Section*******************-->
-
     <section id="home" role="region" aria-labelledby="home">
       <div class="home">
         <div class="px-4 py-5 my-5 text-center">
-          <img class="d-block mx-auto mb-4 hero_logo"
-            src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/logo-icon.png"
-            alt="My picture" />
+          <img class="d-block mx-auto mb-4 hero_logo" src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/logo-icon.png" alt="My picture" />
           <h1 class="display-5 fw-bold">Hi! I'm Jenifer</h1>
           <div class="col-lg-6 mx-auto py-5">
             <h3 class="lead mb-4">
@@ -78,21 +73,19 @@
     <div class="section-break"></div>
 
     <!--********************About Section*******************-->
-
-    <section id="about" class="about" role="region" aria-labelledby="about">
+    <section id="about" role="region" aria-labelledby="about">
       <div class="col-12 section-intro">
         <h2>ABOUT</h2>
         <div class="hline"></div>
       </div>
-      <div class="container text-center about-container">
-        <div class="row">
-          <div class="col">
+      <div class="about-container">
+          <div class="about-img-container">
             <img
               src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/filipiniana.png"
-              alt="A picture of me in Filipinian costume." class="filipiniana-img" />
+              alt="A picture of me in filipiniana costume." class="filipiniana-img" />
           </div>
-          <div class="col">
-            <div class="col-sm-10 about-description-col">
+          <div class="about-description-container">
+            <div class="about-description-title">
               <h3><strong>Jenifer Baldonado</strong></h3>
               <p class="about-description">
                 Landing a career in the tech industry has always been my dream
@@ -103,15 +96,13 @@
               </p>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
     <div class="section-break"></div>
 
     <!--********************skills Section*******************-->
-
-    <section id="skills" class="skills" role="region" aria-labelledby="skills">
+    <section id="skills" role="region" aria-labelledby="skills">
       <div class="col-12 section-intro">
         <h2>SKILLS</h2>
         <div class="hline"></div>
@@ -177,7 +168,6 @@
     <div class="section-break"></div>
 
     <!--********************PORTFOLIO Section*******************-->
-
     <section id="portfolio" class="row g-0 py-0" role="region" aria-labelledby="portfolio">
       <div class="col-12 section-intro">
         <h2>PORTFOLIO</h2>
@@ -213,161 +203,73 @@
               </div>
             </a>
           </div>
-          </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-item">
-                <a href="https://jenbaldonado.github.io/straw-hat-photo-gallery/" target="_blank">
-                  <img
-                    src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
-                    alt="" class="portfolio-img" />
-                  <div class="portfolio-overlay">
-                    <div>
-                      <h3>Straw Hat Photo Gallery</h3>
-                      <h6>Photo Gallery</h6>
-                    </div>
-                  </div>
-                </a>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="portfolio-item">
-                    <a href="https://jenbaldonado.github.io/tribute-page-jose-rizal/" target="_blank">
-                      <img src="images/portfolio-img.png" alt="" class="portfolio-img">
-                      <div class="portfolio-overlay">
-                        <div>
-                          <h3>Dr. Jose Rizal</h3>
-                          <h6>A Tribute Page</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="https://jenbaldonado.github.io/straw-hat-photo-gallery/" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
+                alt="" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <div>
+                  <h3>Straw Hat Photo Gallery</h3>
+                  <h6>Application of CSS Flexbox</h6>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="portfolio-item">
-                    <a href="https://jenbaldonado.github.io/straw-hat-photo-gallery/">
-                      <img src="images/portfolio-img.png" alt="" class="portfolio-img">
-                      <div class="portfolio-overlay">
-                        <div>
-                          <h3>Photo Gallery</h3>
-                          <h6>Project subtitle</h6>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="portfolio-item">
-                    <img src="images/portfolio-img.png" alt="" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                      <div>
-                        <h3>JJ's Teashop</h3>
-                        <h6>A Landing Page</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="portfolio-item">
-                    <img src="images/portfolio-img.png" alt="" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                      <div>
-                        <h3>Project title</h3>
-                        <h6>Project subtite</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="portfolio-item">
-                    <img src="images/portfolio-img.png" alt="" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                      <div>
-                        <h3>Project title</h3>
-                        <h6>Project subtite</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-    </section>
-
-    <div class="section-break"></div>
-
-    <!--********************Contact Section*******************-->
-
-    <section id="contact" role="region" aria-labelledby="contact_title">
-      <div>
-        <div class="col-12 section-intro text-center contact-div">
-          <h2>Get in touch</h2>
-          <div class="hline"></div>
-
-          <div class="socmed-div">
-            <a href="#" target="_blank">
-              <img src="Icons/facebook.png" alt="facebook icon" class="socmed-icons">
-            </a>
-            <a href="#" target="_blank">
-              <img src="Icons/instagram.png" alt="instagram icon" class="socmed-icons">
-            </a>
-            <a href="#" target="_blank">
-              <img src="Icons/linkedin.png" alt="linkedin icon" class="socmed-icons">
-            </a>
-            <a href="#" target="_blank">
-              <img src="Icons/twitter.png" alt="twitter icon" class="socmed-icons">
+              </div>
             </a>
           </div>
         </div>
-      </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="https://jenbaldonado.github.io/LandingPage-TeaShop/" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
-              alt="porfolio image" class="portfolio-img" />
-            <div class="portfolio-overlay">
-              <div>
-                <h3>JJ's Teashop</h3>
-                <h6>A Landing Page</h6>
+        <div class="col-lg-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="https://jenbaldonado.github.io/LandingPage-TeaShop/" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
+                alt="porfolio image" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <div>
+                  <h3>JJ's Teashop</h3>
+                  <h6>A Landing Page</h6>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="https://jenbaldonado.github.io/quiz-site/" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
-              alt="" class="portfolio-img" />
-            <div class="portfolio-overlay">
-              <div>
-                <h3>HTML & CSS Quiz</h3>
-                <h6>Quiz</h6>
+        <div class="col-lg-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="https://jenbaldonado.github.io/quiz-site/" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
+                alt="" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <div>
+                  <h3>HTML & CSS Quiz</h3>
+                  <h6>Application of fieldset and form elements</h6>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="#" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
-              alt="" class="portfolio-img" />
-            <div class="portfolio-overlay">
-              <div>
-                <h3>Project title</h3>
-                <h6>Project subtite</h6>
+        <div class="col-lg-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/portfolio-img.png"
+                alt="" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <div>
+                  <h3>Project title</h3>
+                  <h6>Project subtite</h6>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
     <div class="section-break"></div>
 
     <!--********************Contact Section*******************-->
-    
     <section id="contact" class="contact" role="region" aria-labelledby="contact">
       <div>
         <div class="col-12 section-intro text-center contact-div">
@@ -402,6 +304,9 @@
       <p>Icons are downloaded from <a href="https://icons8.com/icons/" target="_blank">icons8.com</a></p>
     </div>
   </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -7,8 +7,6 @@
 Body {
     position: relative;
     font-family: 'IBM Plex Sans', sans-serif;
-    margin: 0;
-    line-height: 1.8;
     font-size: 15px;
     color:#DFE8E6;
     background-color: #F6D4D2;
@@ -95,24 +93,43 @@ Body {
 }
 
 /*About Section*/
-.about {
-    display: flex;
-    flex-wrap: wrap;
+#about {
     color:  #001F3D;
-    display: block;
     align-items: center;
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-container {
     padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 950px;
+    gap: 30px;
 }
 
 .filipiniana-img {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     border-radius:15px;
 }
+
+.about-description-container {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about-description-title {
+    font-size: 0.5rem;
+}
+
+.about-description {
+    font-size: 16px;
+}
+
 
 .filipiniana-img:hover {
     transform: scale(1.05);
@@ -120,39 +137,20 @@ Body {
     opacity: 1;
 }
 
-.about-description-col {
-    padding-top: 200px;
-    font-size: 0.5rem;
-}
-
-.about-description {
-    padding-top: 20px;
-    font-size: 16px;
-
-}
-
-.resume-link {
-    text-decoration: none;
-    color:#001F3D;
-}
-.resume-link:hover {
-    color:#E87A00;
-}
 
 
 /*skills Section*/
 
-.skills {
+#skills {
     background:#001F3D;
     background:linear-gradient(#4120A9, #A16AE8, #F6D4D2, #a1a9fe);
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
     color:#DAF0F3;
 }
 
 #skills > h2 {
     text-align: center;
-    font-weight: 300;
     padding-top:50px;
 }
 
@@ -186,7 +184,7 @@ Body {
 }
 
 .carousel-control-prev-icon {
-    background-image: url("../Icons/prev.png");
+    background-image: url("https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/prev.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -198,7 +196,7 @@ Body {
 }
 
 .carousel-control-next-icon {
-    background-image: url("../Icons/next.png");
+    background-image: url("https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/next.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -227,7 +225,7 @@ Body {
     overflow: hidden;
     position: relative;
     border-radius: 6px;
-    padding: 8px 8px;
+    padding: 8px 10px;
  }
 
  .portfolio-img {
@@ -271,7 +269,6 @@ Body {
     color: rgba(0, 31, 61, 1);
     height:500px;
     background:linear-gradient(#4120A9, #A16AE8, #F6D4D2, #a1a9fe);
-    box-shadow: 10px 1px 8px 1px #001F3D;
 }
 
 .socmed-icons {
@@ -309,9 +306,14 @@ footer a {
 
 }
 
+@media screen and (max-width:950px){
+    .about-container {
+        margin: 0 20px;
+    }
+}
 
-@media screen and (max-width:600px) {
-    .about-description-col {
+@media screen and (max-width:650px) {
+    .about-description-container {
         padding-top: 10px;
 
     }
@@ -321,8 +323,27 @@ footer a {
 
     }
 
-    .about-description {
-        font-size: 12px;
+    #about {
+        margin: 0 auto;
+    }
+
+    .about-container {
+        display:block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+   
+    .about-description-container {
+        padding-top: 10px;
+        margin: 0 20px;
+    }
+
+    .filipiniana-img {
+        display: block;
+        margin: 0 auto;
+        height: 33.33%;
+        width: 50%;
     }
 
     #skills > .section-intro .hline {
@@ -334,7 +355,26 @@ footer a {
         height: 100px;
     }
     .skills-caption-container{
-        width: 200px;
+        width: 180px;
         height: 300px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .section-intro .hline {
+        width: 90px;
+
+    }
+    #skills > .section-intro .hline {
+        width: 90px;
+    }
+
+    .skills-img-container {
+        width: 50%;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .skills-caption-container{
+        display: none;
     }
 }
