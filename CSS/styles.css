@@ -5,18 +5,17 @@
 }
 
 Body {
-    position: relative;
     font-family: 'Acme', sans-serif;
     font-size: 15px;
-    color:#DFE8E6;
+    color: #001F3D;
     background-color: #F6D4D2;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .section-intro .hline {
     width: 120px;
     height: 2px;
-    background-color: rgba(0, 31, 61, 0.1);
+    background-color: rgba(0, 30, 61, 0.356);
     margin: 16px auto 0 auto;
 }
 
@@ -25,11 +24,10 @@ Body {
     margin-bottom: 10px;
 }
 
-.section-break {
-    height:60px;
-}
 
-/*Header Section*/
+/*
+Header Section
+*/
 
 .navbar {
     background:rgb(65, 32, 169);
@@ -59,13 +57,23 @@ Body {
 
 .nav-link:hover {
     background-color:#DAF0F3;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #E87A00;
     cursor: pointer;
-
 }
 
-/*Hero Section*/
+/*
+Hero Section
+*/
+
+#home {
+    background: url(../images/banner-1050614_1920.jpg) rgba(246, 212, 210, 0.5); /* Image by <a href="https://pixabay.com/users/geralt-9301 */
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50rem;
+}
 
 .hero-logo {
     border-radius: 30%;
@@ -74,30 +82,15 @@ Body {
     box-shadow:0px 4px 17px 0px #001F3D
 }
 
-#home {
-    color: #001F3D;
-    background-image: url(../images/banner-1050614_1920.jpg); /* Image by <a href="https://pixabay.com/users/geralt-9301 */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50rem;
-    column-gap: 16px;
-}
 .home-title {
     font-size:3em;
 }
 
 span {
     color:#A16AE8;
+    text-shadow: 2px 2px 0.5px #001F3D;
 }
 
-.text-container {
-    display:flex;
-    background-color:rgba(246, 212, 210, 0.364);
-    height: 150px;
-    width:auto;
-    border-radius: 16px;
-}
 
 .text-container h1 {
     margin: auto 0;
@@ -114,13 +107,12 @@ span {
 }
 
 
-
-/*About Section*/
+/*
+About Section
+*/
 #about {
-    color:  #001F3D;
     align-items: center;
-    padding-bottom: 50px;
-    padding-top: 70px;
+    margin: 140px auto;
     font-size: 1em;
 }
 
@@ -138,14 +130,10 @@ span {
 }
 
 .about-content-container {
-    position: relative;
     width: 25em;
     height: 26.5em;
-    border-radius: 10px;
-    background:rgba(161, 106, 232, 0.349);
-    box-shadow:0px 2px 5px 0px #001F3D;
-
 }
+
 .about-img-container {
     position: relative;
     height: 26.5em;
@@ -170,7 +158,7 @@ span {
 }
 
 .about-description {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .socmed-icons {
@@ -182,7 +170,6 @@ span {
 .socmed-div {
     justify-content: space-evenly;
     padding-top: 20px;
-
 }
 
 .icon-link {
@@ -190,61 +177,9 @@ span {
 }
 
 
-/*skills Section*/
-
-#skills {
-    background:#001F3D;
-    background:linear-gradient(#4120A9, #A16AE8, #F6D4D2, #a1a9fe);
-    padding-top: 50px;
-    padding: 50px;
-    color:#DAF0F3;
-}
-
-#skills > h2 {
-    text-align: center;
-    padding-top:50px;
-}
-
-#skills > .section-intro .hline {
-    width: 120px;
-    height: 2px;
-    background-color: #a1a9fe;
-    margin: 16px auto 0 auto;
-
-}
-.carousel-caption {
-    color:#001F3D;
-}
-
-.carousel-control-prev-icon {
-    background-image: url("https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/prev.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.carousel-control-prev-icon:hover {
-    width: 50px;
-    height: 50px;
-}
-
-.carousel-control-next-icon {
-    background-image: url("https://raw.githubusercontent.com/JenBaldonado/images-sources/main/portfolio-images/next.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.carousel-control-next-icon:hover {
-    width: 50px;
-    height: 50px;
-}
-
-
-/* Portfolio */
-#portfolio {
-    color: rgba(0, 31, 61, 1);
-}
+/* 
+Portfolio 
+*/
 
 .portfolio-container {
     display: flex;
@@ -261,7 +196,7 @@ span {
 
  .portfolio-img {
     width:100%;
-    height: 350px;
+    height: 300px;
  }
 
 .portfolio-overlay {
@@ -281,10 +216,6 @@ span {
     transition: all 0.4s ease;
 }
 
-.portfolio-overlay h3,
-.portfolio-overlay h6 {
-   color: #fff;
-}
 
 .portfolio-item:hover .portfolio-overlay {
    opacity: 1;
@@ -303,17 +234,16 @@ span {
   }
 
 
-/*Contact Section */
+/*
+Contact Section 
+*/
 
 .contact {
-    color: rgba(0, 31, 61, 1);
-    height: 680px;
-}
-
-.contact-div {
+    height: 700px;
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
 
 label {
     display: flex;
@@ -356,17 +286,15 @@ button[type="submit"] {
     height: 20px;
 }
 
-/*footer section*/
+/*
+footer section
+*/
 
 footer {
-    background:linear-gradient(#4120A9, #A16AE8);
+    background:rgb(65, 32, 169);
     height: 50px;
     text-align: center;
     padding-top: 20px;
     font-size: 16px;
-}
-
-footer a {
-    text-decoration: none;
     color:#DFE8E6;
 }
