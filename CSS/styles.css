@@ -55,7 +55,7 @@ Hero Section
 */
 
 #home {
-    background: url(../images/banner-1050614_1920.jpg);
+    background: url(../images/banner-1050614_1920.jpg) rgba(246, 212, 210, 0.6);
     /* Image by <a href="https://pixabay.com/users/geralt-9301 */
     background-blend-mode: overlay;
     background-size: cover;
