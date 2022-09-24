@@ -10,6 +10,7 @@ Body {
     color: #89abe3ff;
     background-color: #fcf6f5ff;
     line-height: 1.1;
+    margin: auto;
 }
 
 .section-intro .hline {
