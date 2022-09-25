@@ -6,7 +6,6 @@
 
 html{
     max-width: 100% !important; 
-    overflow-x: hidden;
 }
 
 
@@ -17,7 +16,6 @@ Body {
     background-color: #fcf6f5ff;
     line-height: 1.1;
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 .section-intro .hline {
@@ -71,6 +69,7 @@ Hero Section
     background-position: center;
     height: 40rem;
     color: #001e3d;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -114,6 +113,7 @@ About Section
     margin: 130px auto;
     padding-top: 70px;
     font-size: 1em;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -135,6 +135,11 @@ About Section
 
     .portfolio-container {
         margin: auto 20px;
+    }
+
+    html, body{
+        max-width: 100% !important; 
+        overflow-x: hidden;
     }
 }
 
@@ -200,6 +205,7 @@ a {
     background: #89abe3ff;
     color: #fcf6f5ff !important;
     height: 50px;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -251,7 +257,8 @@ Portfolio
     align-items: center;
     margin: 0 auto;
     row-gap: 20px;
-    /* overflow-x: hidden; */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .portfolio-item {
@@ -306,6 +313,7 @@ Contact Section
     height: 700px;
     padding-top: 100px;
     padding-bottom: 50px;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
